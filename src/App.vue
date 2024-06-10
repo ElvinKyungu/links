@@ -2,7 +2,9 @@
 </script>
 
 <template>
-  <RouterView />
+  <div class="font-popins">
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
