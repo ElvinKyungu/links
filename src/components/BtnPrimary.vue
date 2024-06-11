@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <button class="bg-primary text-secondary p-3 rounded-md">
+  <button class="bg-primary text-secondary p-2 md:text-lg md:p-3 rounded-md">
     {{ props.text }}
   </button>
 </template>

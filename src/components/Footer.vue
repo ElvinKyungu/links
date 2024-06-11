@@ -5,15 +5,15 @@
 </script>
 <template>
   <footer class="bg-secondary">
-    <div class="flex items-center px-40 py-10 gap-10 border-b">
-      <div class="flex flex-col w-1/3">
+    <div class="grid col-span-1 md:flex items-center px-10 md:px-20 lg:px-40 py-10 gap-10 border-b">
+      <div class="flex flex-col lg:w-1/3">
         <img :src="logo" class="w-56" alt="">
         <p class="text-lg text-white">
           We Provide a wide range of Logistics, Escort & Tracking Services for 
           several companies.
         </p>
       </div>
-      <nav class="flex justify-between gap-10 w-full">
+      <nav class="grid col-span-1 md:flex justify-between gap-10 w-full">
         <ul class="text-[#E3E3E3]">
           <li class="text-primary text-lg font-semibold mb-2">Useful links</li>
           <li>Logistics Solutions</li>
@@ -53,10 +53,10 @@
         </ul>
       </nav>
     </div>
-    <div class="flex justify-between text-white mx-40 py-10">
+    <div class="flex justify-between text-white px-10 md:px-20 lg:px-40 py-10">
       <div>
         <h3 class="text-lg font-semibold">Resources</h3>
-        <ul class="flex gap-6 mt-3">
+        <ul class="grid col-2 md:flex gap-6 mt-3">
           <li>Logistics Solutions Profile</li>
           <li>Escort & Tracking Profile</li>
           <li>Links SOP</li>
