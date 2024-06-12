@@ -7,7 +7,7 @@
   <footer class="bg-secondary">
     <div class="grid col-span-1 md:flex items-center px-10 md:px-20 lg:px-40 py-10 gap-10 border-b">
       <div class="flex flex-col lg:w-1/3">
-        <img :src="logo" class="w-56" alt="">
+        <img src="@/assets/logo_white.png" class="w-56" alt="">
         <p class="text-lg text-white">
           We Provide a wide range of Logistics, Escort & Tracking Services for 
           several companies.
