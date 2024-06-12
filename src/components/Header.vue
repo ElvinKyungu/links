@@ -10,7 +10,7 @@
       "
     >
       <router-link to="/">
-        <img src="@/assets/logo_white.png" class="w-40" alt="">
+        <img :src="logo" class="w-40" alt="">
       </router-link>
       <ul class="hidden md:flex gap-4 md:gap-5 lg:gap-6 items-center text-xl">
         <li>

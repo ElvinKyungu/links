@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'header': "url('./src/assets/bg-1.jpg')",
-        'afterFooter': "url('./src/assets/bg-2.jpg')",
+        'header': "url('/bg-1.jpg')",
+        'afterFooter': "url('/bg-2.jpg')",
       },
       colors:{
         'primary': '#C2F970',
