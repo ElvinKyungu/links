@@ -4,7 +4,7 @@ import NavBar from '../base/NavBar.vue';
 </script>
 
 <template>
-  <header class="bg-header bg-cover bg-center h-[90vh] w-screen -mt-30 md:mt-0">
+  <header class="bg-header bg-cover bg-center h-[90vh] -mt-30 md:mt-0">
     <NavBar />
     <div class="px-10 md:px-20 lg:px-40 my-36">
       <h1 class="text-white text-4xl md:5xl lg:text-7xl font-bold md:flex md:flex-col md:gap-6">
