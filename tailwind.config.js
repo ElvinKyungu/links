@@ -9,6 +9,7 @@ export default {
       backgroundImage: {
         'header': "url('/bg-1.jpg')",
         'afterFooter': "url('/bg-2.jpg')",
+        'logisticSolution': "url('/bg-3.jpg')"
       },
       colors:{
         'primary': '#C2F970',
