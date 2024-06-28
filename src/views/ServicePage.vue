@@ -18,13 +18,13 @@
       <div></div>
       <ul class="flex flex-col gap-3 text-xl mt-5 font-medium">
         <li 
-          v-for="(service, key) in services" 
+          v-for="({title}, key) in services"
           :key="key" 
           class="flex items-center gap-3"
           :class="{ 'text-primary font-bold ': key === currentService }"
         >
           <IconRightService/>
-          <span>{{ service.title }}</span>
+          <span>{{ title }}</span>
         </li>
       </ul>
     </div>
