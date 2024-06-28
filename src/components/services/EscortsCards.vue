@@ -13,27 +13,31 @@
     <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       <CardComponent
         :imgSrc="Tracking"
-        title="Transport Services"
+        title="Escorts & Tracking"
         titleColor="text-primary"
         bgColor="bg-primary"
+        cardUrl="/service/escorts-tracking"
       />
       <CardComponent
         :imgSrc="EscortsManager"
-        title="Logistics Solution"
+        title="Monitoring"
         titleColor="text-secondary"
         bgColor="bg-secondary"
+        cardUrl="/service/monitoring"
       />
       <CardComponent
         :imgSrc="Logisticak"
-        title="Supply Chain management"
+        title="Escots Experts Managers"
         titleColor="text-secondary"
         bgColor="bg-secondary"
+        cardUrl="/service/escorts-experts"
       />
       <CardComponent
         :imgSrc="Monitoring"
         title="Operations management"
         titleColor="text-secondary"
         bgColor="bg-secondary"
+        cardUrl="/service/operation"
       />
     </div>
   </section>

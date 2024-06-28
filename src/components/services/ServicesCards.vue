@@ -15,28 +15,28 @@
         title="Transport Services"
         titleColor="text-primary"
         bgColor="bg-primary"
-        cardUrl="/transport"
+        cardUrl="/service/transport"
       />
       <CardComponent
         :imgSrc="Logistic"
         title="Logistics Solution"
         titleColor="text-secondary"
         bgColor="bg-secondary"
-        cardUrl="/services-logistic"
+        cardUrl="/service/logistic"
       />
       <CardComponent
         :imgSrc="Supply"
         title="Supply Chain management"
         titleColor="text-secondary"
         bgColor="bg-secondary"
-        cardUrl="/services-supply"
+        cardUrl="/service/supply"
       />
       <CardComponent
         :imgSrc="transport"
         title="Operations management"
         titleColor="text-secondary"
         bgColor="bg-secondary"
-        cardUrl="/services-operation"
+        cardUrl="/service/operation"
       />
     </div>
   </section>
