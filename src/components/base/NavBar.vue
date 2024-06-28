@@ -27,7 +27,7 @@ const toggleMenu = () => {
         <router-link to="/services">Logistics & Solution</router-link>
       </li>
       <li>
-        <router-link to="/">Escort & Tracking</router-link>
+        <router-link to="/escorts">Escort & Tracking</router-link>
       </li>
       <li>
         <router-link to="/">
@@ -58,7 +58,7 @@ const toggleMenu = () => {
             <router-link to="/services">Logistics & Solution</router-link>
           </li>
           <li @click="toggleMenu">
-            <router-link to="/">Escort & Tracking</router-link>
+            <router-link to="/escorts">Escort & Tracking</router-link>
           </li>
           <li @click="toggleMenu">
             <router-link to="/">

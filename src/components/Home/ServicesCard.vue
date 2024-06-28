@@ -1,5 +1,6 @@
 <script setup lang="ts">
-  import IconLogistic from '@/assets/icons/logistical-support.svg'
+  import Escort from '@/assets/icons/tracking-services.svg'
+  import Logistic from '@/assets/icons/hub.svg'
   import BtnPrimary from '../base/BtnPrimary.vue'
 </script>
 <template>
@@ -12,13 +13,16 @@
       "
     >
       <div class="flex items-center gap-2">
-        <img :src="IconLogistic" class="w-10 md:w-56" alt="">
+        <img :src="Logistic" class="w-10 md:w-56" alt="">
         <h2 class="text-secondary text-3xl font-semibold mb-5 block md:hidden mt-8">Logistics Solutions</h2>
       </div>
       <div>
         <h2 class="text-secondary text-4xl font-semibold mb-5 hidden md:flex">Logistics Solutions</h2>
         <p class="text-lg mb-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus augue a nisi tincidunt pellentesque. Etiam ipsum sem, porta in ornare vel, blandit vel leo. Donec id tempus magna, eu porttitor leo. Vivamus eu feugiat nisi. Proin ut tellus et est semper rutrum. Sed dolor ipsum, congue iaculis convallis eu, condimentum non ex.
+          Links provides a wide range of options for moving your freight 
+          efficiently, including air, ocean, and land transportation. 
+          We handle everything from single packages to complex multi-modal
+          shipments, ensuring your cargo arrives on time and within budget.
         </p>
         <BtnPrimary text="Discover More" />
       </div>
@@ -30,7 +34,7 @@
       "
     >
       <div class="flex items-center gap-2">
-        <img :src="IconLogistic" class="w-10 md:w-56" alt="">
+        <img :src="Escort" class="w-10 md:w-56" alt="">
         <h2 
           class="
             text-primary text-3xl font-semibold mb-5 block md:hidden mt-8
@@ -45,10 +49,13 @@
             text-primary text-4xl font-semibold mb-5 hidden md:flex
           "
         >
-          Logistics Solutions
+          Escort & Tracking
         </h2>
         <p class="text-lg mb-5 text-white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus augue a nisi tincidunt pellentesque. Etiam ipsum sem, porta in ornare vel, blandit vel leo. Donec id tempus magna, eu porttitor leo. Vivamus eu feugiat nisi. Proin ut tellus et est semper rutrum. Sed dolor ipsum, congue iaculis convallis eu, condimentum non ex.
+          Links provides a team of experienced and licensed professionals 
+          to ensure the safe and secure transport of your high-value or 
+          sensitive goods. Our escort services offer real-time monitoring 
+          and intervention capabilities, giving you complete peace of mind.
         </p>
         <BtnPrimary text="Discover More" />
       </div>

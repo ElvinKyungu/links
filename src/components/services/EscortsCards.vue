@@ -1,8 +1,9 @@
 <script setup lang="ts">
   import CardComponent from '@/components/services/Cards.vue'
-  import transport from '@/assets/icons/transport.svg'
-  import Logistic from '@/assets/icons/logistics.svg'
-  import Supply from '@/assets/icons/supply-chain.svg'
+  import Tracking from '@/assets/icons/tracking.svg'
+  import EscortsManager from '@/assets/icons/escorts.svg'
+  import Logisticak from '@/assets/icons/logistical-support.svg'
+  import Monitoring from '@/assets/icons/monitoring.svg'
 </script>
 <template>
   <section class="mx-10 md:mx-16 lg:mx-32 mt-28 mb-10">
@@ -11,32 +12,28 @@
     </h1>
     <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       <CardComponent
-        :imgSrc="transport"
+        :imgSrc="Tracking"
         title="Transport Services"
         titleColor="text-primary"
         bgColor="bg-primary"
-        cardUrl="/transport"
       />
       <CardComponent
-        :imgSrc="Logistic"
+        :imgSrc="EscortsManager"
         title="Logistics Solution"
         titleColor="text-secondary"
         bgColor="bg-secondary"
-        cardUrl="/services-logistic"
       />
       <CardComponent
-        :imgSrc="Supply"
+        :imgSrc="Logisticak"
         title="Supply Chain management"
         titleColor="text-secondary"
         bgColor="bg-secondary"
-        cardUrl="/services-supply"
       />
       <CardComponent
-        :imgSrc="transport"
+        :imgSrc="Monitoring"
         title="Operations management"
         titleColor="text-secondary"
         bgColor="bg-secondary"
-        cardUrl="/services-operation"
       />
     </div>
   </section>

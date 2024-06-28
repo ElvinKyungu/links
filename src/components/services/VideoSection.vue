@@ -32,9 +32,10 @@
           </div>
         </div>
       </div>
+
+        <!-- :src="videoEmbedUrl" -->
       <iframe
         v-show="!showThumbnail"
-        :src="videoEmbedUrl"
         class="w-full h-full absolute top-0 left-0"
         frameborder="0"
         allow="autoplay"

@@ -15,7 +15,7 @@ import NavBar from '../base/NavBar.vue';
         <span>We Provide a wide range of Logistics, Escort &</span>
         <span>Tracking Services for several companies.</span>
       </p>
-      <router-link to="/">
+      <router-link to="/" class="mb-3">
         <BtnPrimary text="Discover Our Services"/>
       </router-link>
     </div>
