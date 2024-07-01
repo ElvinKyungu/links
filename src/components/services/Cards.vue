@@ -7,10 +7,10 @@ import SvgLogistic from '@/components/svg/SvgLogistic.vue'
 import SvgMonitoring from '@/components/svg/SvgMonitoring.vue'
 import SvgSupply from '@/components/svg/SvgSupply.vue'
 import SvgTrackingService from '@/components/svg/SvgTrackingService.vue'
+import SvgTracking from '@/components/svg/SvgTracking.vue'
 import SvgTransport from '@/components/svg/SvgTransport.vue'
 
 interface Props {
-  imgSrc: string;
   title: string;
   titleColor: string;
   bgColor: string;
@@ -27,7 +27,8 @@ const components: Record<string, any> = {
   SvgMonitoring,
   SvgSupply,
   SvgTrackingService,
-  SvgTransport
+  SvgTransport,
+  SvgTracking
 }
 </script>
 
