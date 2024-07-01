@@ -16,6 +16,7 @@
         titleColor="text-primary"
         bgColor="bg-primary"
         cardUrl="/service/transport"
+        iconComponent="SvgTransport"
       />
       <CardComponent
         :imgSrc="Logistic"
@@ -23,6 +24,7 @@
         titleColor="text-secondary"
         bgColor="bg-secondary"
         cardUrl="/service/logistic"
+        iconComponent="SvgLogistic"
       />
       <CardComponent
         :imgSrc="Supply"
@@ -30,6 +32,7 @@
         titleColor="text-secondary"
         bgColor="bg-secondary"
         cardUrl="/service/supply"
+        iconComponent="SvgSupply"
       />
       <CardComponent
         :imgSrc="transport"
@@ -37,6 +40,7 @@
         titleColor="text-secondary"
         bgColor="bg-secondary"
         cardUrl="/service/operation"
+        iconComponent="SvgTransport"
       />
     </div>
   </section>
