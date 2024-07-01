@@ -2,7 +2,10 @@
 import { defineProps, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import NavBar from '../base/NavBar.vue'
+import { useGsapAnimation } from '@/composables/useGsapAnimation'
 
+const headerTitleRef = useGsapAnimation(-50, 1, 0)
+const headerSubTitleRef = useGsapAnimation(100, 1.5, 0)
 const props = defineProps<{ serviceName: string }>()
 
 const route = useRoute()
@@ -22,10 +25,10 @@ const displayName = computed(() => {
   <header class="bg-logisticSolution bg-cover bg-center h-[70vh] -mt-30 md:mt-0">
     <NavBar />
     <div class="px-10 md:px-20 lg:px-40 my-36">
-      <h1 class="text-gray-500 uppercase text-center text-2xl md:3xl lg:text-4xl">
+      <h1 ref="headerSubTitleRef" class="text-gray-500 uppercase text-center text-2xl md:3xl lg:text-4xl">
         Discover our
       </h1>
-      <h1 class="text-white text-center text-4xl md:5xl lg:text-7xl font-bold">
+      <h1 ref="headerTitleRef"class="text-white text-center text-4xl md:5xl lg:text-7xl font-bold">
         {{ displayName }}
       </h1>
     </div>

@@ -9,7 +9,9 @@ import SvgSupply from '@/components/svg/SvgSupply.vue'
 import SvgTrackingService from '@/components/svg/SvgTrackingService.vue'
 import SvgTracking from '@/components/svg/SvgTracking.vue'
 import SvgTransport from '@/components/svg/SvgTransport.vue'
+import { useGsapAnimation } from '@/composables/useGsapAnimation'
 
+const titleRef = useGsapAnimation(-50, .4, 0)
 interface Props {
   title: string;
   titleColor: string;

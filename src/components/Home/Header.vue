@@ -1,32 +1,12 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
 import BtnPrimary from '../base/BtnPrimary.vue'
 import NavBar from '../base/NavBar.vue'
-import gsap from 'gsap'
+import { useGsapAnimation } from '@/composables/useGsapAnimation'
 
-// Références pour les éléments à animer
-const titleRef = ref<HTMLElement | null>(null)
-const paragraphRef = ref<HTMLElement | null>(null)
-
-onMounted(() => {
-  // Animation du titre
-  gsap.from(titleRef.value, {
-    opacity: 0,
-    y: -50,
-    duration: 1,
-    ease: 'power2.out'
-  })
-
-  // Animation du paragraphe
-  gsap.from(paragraphRef.value, {
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    ease: 'power2.out',
-    delay: 0.5
-  })
-})
+const titleRef = useGsapAnimation(-50, 1, 0)
+const paragraphRef = useGsapAnimation(50, 1, 0.5)
 </script>
+
 <template>
   <header class="bg-header bg-cover bg-center h-[96vh] -mt-30 md:mt-0">
     <NavBar />
@@ -39,7 +19,7 @@ onMounted(() => {
         <span>We Provide a wide range of Logistics, Escort &</span>
         <span>Tracking Services for several companies.</span>
       </p>
-      <router-link to="/" class="mb-3">
+      <router-link to="/" class="mb-3" >
         <BtnPrimary text="Discover Our Services"/>
       </router-link>
     </div>

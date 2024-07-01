@@ -1,9 +1,12 @@
 <script setup lang="ts">
   import CardComponent from '@/components/services/Cards.vue'
+  import { useGsapAnimation } from '@/composables/useGsapAnimation'
+
+  const titleRef = useGsapAnimation(100, 1, 0)
 </script>
 <template>
   <section class="mx-10 md:mx-16 lg:mx-32 mt-28 mb-10">
-    <h1 class="text-secondary text-center mb-5 text-3xl md:4xl lg:text-6xl font-bold">
+    <h1 ref="titleRef" class="text-secondary text-center mb-5 text-3xl md:4xl lg:text-6xl font-bold">
       We provide
     </h1>
     <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

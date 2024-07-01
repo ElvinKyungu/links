@@ -2,6 +2,12 @@
   import Escort from '@/assets/icons/tracking-services.svg'
   import Logistic from '@/assets/icons/hub.svg'
   import BtnPrimary from '../base/BtnPrimary.vue'
+  import { useGsapAnimation } from '@/composables/useGsapAnimation'
+
+  const logisticTitleRef = useGsapAnimation(-50, 1, 0)
+  const logisticParagraphRef = useGsapAnimation(50, 1, 0.5)
+  const escortTitleRef = useGsapAnimation(-50, 1, 0)
+  const escortParagraphRef = useGsapAnimation(50, 1, 0.5)
 </script>
 <template>
   <div class="grid colspan-1 md:flex px-10 md:px-16 lg:px-40 -mt-20">
@@ -14,11 +20,16 @@
     >
       <div class="flex items-center gap-2">
         <img :src="Logistic" class="w-10 md:w-56" alt="">
-        <h2 class="text-secondary text-3xl font-semibold mb-5 block md:hidden mt-8">Logistics Solutions</h2>
+        <h2 
+          class="text-secondary text-3xl font-semibold mb-5 block md:hidden mt-8"
+          ref="logisticTitleRef"
+        >
+          Logistics Solutions
+        </h2>
       </div>
       <div>
-        <h2 class="text-secondary text-4xl font-semibold mb-5 hidden md:flex">Logistics Solutions</h2>
-        <p class="text-lg mb-5">
+        <h2 ref="logisticTitleRef" class="text-secondary text-4xl font-semibold mb-5 hidden md:flex">Logistics Solutions</h2>
+        <p class="text-lg mb-5" ref="logisticParagraphRef">
           Links provides a wide range of options for moving your freight 
           efficiently, including air, ocean, and land transportation. 
           We handle everything from single packages to complex multi-modal
@@ -39,6 +50,7 @@
           class="
             text-primary text-3xl font-semibold mb-5 block md:hidden mt-8
           "
+          ref="escortTitleRef"
         >
           Logistics Solutions
         </h2>
@@ -48,10 +60,11 @@
           class="
             text-primary text-4xl font-semibold mb-5 hidden md:flex
           "
+          ref="escortTitleRef"
         >
           Escort & Tracking
         </h2>
-        <p class="text-lg mb-5 text-white">
+        <p class="text-lg mb-5 text-white" ref="escortParagraphRef">
           Links provides a team of experienced and licensed professionals 
           to ensure the safe and secure transport of your high-value or 
           sensitive goods. Our escort services offer real-time monitoring 

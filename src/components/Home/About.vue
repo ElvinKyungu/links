@@ -1,34 +1,8 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
-import gsap from 'gsap'
-
-// Références pour les éléments à animer
-const titleRef = ref<HTMLElement | null>(null)
-const paragraphRef = ref<HTMLElement | null>(null)
-const subtitleRef = ref<HTMLElement | null>(null)
-onMounted(() => {
-  gsap.from(titleRef.value, {
-    opacity: 0,
-    y: -50,
-    duration: 1,
-    ease: 'power2.out'
-  })
-
-  gsap.from(subtitleRef.value,{
-    opacity:0,
-    x: -50,
-    duration: 1.2,
-    ease: 'power3.out'
-  })
-
-  gsap.from(paragraphRef.value, {
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    ease: 'power2.out',
-    delay: 0.5
-  })
-})
+import { useGsapAnimation } from '@/composables/useGsapAnimation'
+const paragraphRef = useGsapAnimation(50, 1, 0.1)
+const titleRef = useGsapAnimation(-50, 1, 0.5)
+const subtitleRef = useGsapAnimation(70, 1, 0.5)
 </script>
 <template>
   <div class="mx-10 md:mx-20 lg:mx-40 my-40">
