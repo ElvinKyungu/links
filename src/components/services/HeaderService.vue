@@ -1,6 +1,21 @@
 <script setup lang="ts">
-import BtnPrimary from '../base/BtnPrimary.vue'
-import NavBar from '../base/NavBar.vue';
+import { defineProps, computed } from 'vue'
+import { useRoute } from 'vue-router'
+import NavBar from '../base/NavBar.vue'
+
+const props = defineProps<{ serviceName: string }>()
+
+const route = useRoute()
+
+const displayName = computed(() => {
+  if (route.path === '/services') {
+    return 'Services'
+  } else if (route.path === '/escorts') {
+    return 'Escorts'
+  } else {
+    return props.serviceName
+  }
+})
 </script>
 
 <template>
@@ -11,12 +26,11 @@ import NavBar from '../base/NavBar.vue';
         Discover our
       </h1>
       <h1 class="text-white text-center text-4xl md:5xl lg:text-7xl font-bold">
-        Logistics Solutions
+        {{ displayName }}
       </h1>
     </div>
   </header>
 </template>
 
 <style scoped>
-
 </style>

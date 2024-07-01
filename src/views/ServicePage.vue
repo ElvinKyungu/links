@@ -1,5 +1,5 @@
 <template>
-  <HeaderService/>
+  <HeaderService :serviceName="serviceData.title" />
   <section class="grid grid-cols-1 md:flex justify-between w-full relative gap-6 mt-20 px-5 sm:px-10 md:px-20 lg:px-40">
     <div class="w-full">
       <h3 class="text-gray-300 text-xl sm:text-2xl md:text-3xl lg:text-4xl">Discover our</h3>
@@ -15,16 +15,17 @@
     <div class="w-full bg-gray-100 px-7 py-10 rounded-lg">
       <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-secondary mt-4">Other Services</h2>
       <div class="h-3 w-1/5 bg-primary"></div>
-      <div></div>
       <ul class="flex flex-col gap-3 text-xl mt-5 font-medium">
         <li 
-          v-for="({title}, key) in services"
+          v-for="(service, key) in services"
           :key="key" 
           class="flex items-center gap-3"
-          :class="{ 'text-primary font-bold ': key === currentService }"
+          :class="{ 'text-primary font-bold': key === currentService }"
         >
-          <IconRightService/>
-          <span>{{ title }}</span>
+          <router-link :to="'/service/' + key">
+            <IconRightService/>
+            <span>{{ service.title }}</span>
+          </router-link>
         </li>
       </ul>
     </div>
@@ -34,8 +35,8 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
-import { useRoute } from 'vue-router'
+import { ref, watchEffect } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import { services } from '@/data/services'
 import HeaderService from '@/components/services/HeaderService.vue'
 import Footer from '@/components/base/Footer.vue'
@@ -43,16 +44,15 @@ import DownloadCards from '@/components/services/DownloadCards.vue'
 import IconRightService from '@/components/icons/IconRightService.vue'
 
 const route = useRoute()
-const serviceData = ref(
-  { 
-    title: '', 
-    description: '', 
-    list: [] as string[] 
-  }
-)
+const router = useRouter()
+const serviceData = ref({
+  title: '',
+  description: '',
+  list: [] as string[]
+})
 const currentService = ref<string>('')
 
-onMounted(() => {
+watchEffect(() => {
   const serviceName = route.params.serviceName as keyof typeof services
   if (services[serviceName]) {
     serviceData.value = services[serviceName]
@@ -61,6 +61,7 @@ onMounted(() => {
     console.error(`Service '${serviceName}' not found`)
   }
 })
+
 </script>
 
 <style scoped>
