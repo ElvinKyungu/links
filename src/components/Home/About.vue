@@ -1,13 +1,45 @@
+<script setup lang="ts">
+import { onMounted, ref } from 'vue'
+import gsap from 'gsap'
+
+// Références pour les éléments à animer
+const titleRef = ref<HTMLElement | null>(null)
+const paragraphRef = ref<HTMLElement | null>(null)
+const subtitleRef = ref<HTMLElement | null>(null)
+onMounted(() => {
+  gsap.from(titleRef.value, {
+    opacity: 0,
+    y: -50,
+    duration: 1,
+    ease: 'power2.out'
+  })
+
+  gsap.from(subtitleRef.value,{
+    opacity:0,
+    x: -50,
+    duration: 1.2,
+    ease: 'power3.out'
+  })
+
+  gsap.from(paragraphRef.value, {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: 'power2.out',
+    delay: 0.5
+  })
+})
+</script>
 <template>
   <div class="mx-10 md:mx-20 lg:mx-40 my-40">
-    <h1 class="capitalize text-4xl text-center font-semibold mb-5">About Us</h1>
-    <h3 class="uppercase  text-[#828282] text-center text-xl">Know more about our company</h3>
+    <h1 class="capitalize text-4xl text-center font-semibold mb-5" ref="titleRef">About Us</h1>
+    <h3 class="uppercase  text-[#828282] text-center text-xl" ref="subtitleRef">Know more about our company</h3>
     <div class="grid col-span-1 md:flex justify-between w-full gap-6 my-10">
       <div class="bg-[#D9D9D9] rounded-md w-full md:w-1/2 h-64 md:h-96">
 
       </div>
       <div class="w-full md:w-1/2">
-        <p class="text-lg text-justify">
+        <p class="text-lg text-justify" ref="paragraphRef">
           <span class="block mb-3">
             Links escorts & Tracking is a specialist Escort and logistics service provider operating across Central, East and Southern Africa.
           </span>
