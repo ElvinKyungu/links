@@ -16,6 +16,8 @@
     <p class="text-lg md:text-xl  text-white mb-5 px-10 text-center" ref="paragraphRef">
       We are always getting extra miles to serve you better.
     </p>
-    <BtnPrimary text="Get In Touch With  Us"/>
+    <a href="mailto:contact@linkslogistics.co.za">
+      <BtnPrimary text="Get In Touch With  Us"/>
+    </a>
   </div>
 </template>

@@ -18,11 +18,10 @@
       <ul class="flex flex-col gap-3 text-xl mt-5 font-medium">
         <li 
           v-for="(service, key) in services"
-          :key="key" 
-          class="flex items-center gap-3"
+          :key="key"
           :class="{ 'text-primary font-bold': key === currentService }"
         >
-          <router-link :to="'/service/' + key">
+          <router-link :to="'/service/' + key" class="flex items-center gap-3">
             <IconRightService/>
             <span>{{ service.title }}</span>
           </router-link>

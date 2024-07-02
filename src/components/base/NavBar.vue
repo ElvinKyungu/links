@@ -31,9 +31,9 @@ const toggleMenu = () => {
         <router-link to="/escorts" active-class="text-primary border-b border-primary transition">Escort & Tracking</router-link>
       </li>
       <li class="hover:text-primary">
-        <router-link to="/">
+        <a href="mailto:contact@linkslogistics.co.za">
           <BtnPrimary text="Contact Us"/>
-        </router-link>
+        </a>
       </li>
     </ul>
   </nav>
@@ -62,9 +62,9 @@ const toggleMenu = () => {
             <router-link to="/escorts" active-class="text-primary font-bold">Escort & Tracking</router-link>
           </li>
           <li @click="toggleMenu">
-            <router-link to="/" active-class="text-primary font-bold">
+            <a href="mailto:contact@linkslogistics.co.za">
               <BtnPrimary text="Contact Us"/>
-            </router-link>
+            </a>
           </li>
         </ul>
       </nav>

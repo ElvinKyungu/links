@@ -50,17 +50,17 @@ import EscortsCompany from '@/assets/pdf/escorts-company.pdf'
           <li class="text-primary text-lg font-semibold mb-2">Contact</li>
           <li class="flex items-center gap-4 hover:text-primary cursor-pointer">
             <IconCall class="text-primary"/>
-            <span>+243 975 543 617</span>
+            <a href="tel:+243975543617" target="_blank">+243 975 543 617</a>
           </li>
           <li class="flex items-center gap-4 hover:text-primary cursor-pointer">
             <IconCall class="text-primary"/>
-            <span>+260 960 778 799</span>
+            <a href="tel:+260960778799" target="_blank">+260 960 778 799</a>
           </li>
           <li class="flex items-center gap-4 hover:text-primary cursor-pointer">
             <div class="border-primary p-1">
               <IconMail class="text-primary"/>
             </div>
-            <span>sales@linkslogistics.co.za</span>
+            <a href="mailto:contact@linkslogistics.co.za" target="_blank">sales@linkslogistics.co.za</a>
           </li>
         </ul>
       </nav>
