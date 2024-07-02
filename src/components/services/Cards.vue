@@ -18,7 +18,7 @@ interface Props {
   bgColor: string;
   cardUrl: string;
   iconComponent: string;
-  paragraphe: String; 
+  paragraph: String; 
 }
 
 defineProps<Props>()
@@ -42,11 +42,11 @@ const components: Record<string, any> = {
         <component :is="components[iconComponent]" class="svg-services w-40 h-20 fill-secondary group-hover:fill-primary transition"/>
         <h1 class="text-xl transition font-bold group-hover:text-primary">{{ title }}</h1>
       </div>
-      <p class="text-lg my-4 pb-5 border-b border-gray-300">
-        {{ paragraphe }}
+      <p class="text-lg my-4 pb-5 border-b border-gray-300 h-[14rem]">
+        {{ paragraph }}
       </p>
       <div class="flex items-center gap-4">
-        <span :class="`block rounded-full p-2 ${bgColor}`">
+        <span class="block rounded-full p-2 bg-secondary transition group-hover:bg-primary">
           <IconRight class="text-white"/>
         </span>
         <span class="text-lg">Explore</span>
