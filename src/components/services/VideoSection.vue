@@ -15,7 +15,6 @@
     </div>
     <div class="relative video-container">
       <div
-        v-if="showThumbnail"
         @click="playVideo"
         class="video-thumbnail w-full h-full bg-cover bg-center cursor-pointer relative flex justify-center items-center"
         :style="{ backgroundImage: `url(${backgroundVideo})` }"
@@ -32,29 +31,24 @@
           </div>
         </div>
       </div>
-
-      <iframe
-        :src="videoEmbedUrl" 
-        v-show="!showThumbnail"
-        class="w-full h-full absolute top-0 left-0"
-        frameborder="0"
-        allow="autoplay"
-        allowfullscreen
-      ></iframe>
     </div>
+    <VideoModal v-if="showModal" :videoId="videoId" @close="showModal = false"/>
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
 import backgroundVideo from '/bg-1.jpg'
+import VideoModal from '@/components/services/VideoModal.vue'
 
 const showThumbnail = ref(true)
+const showModal = ref(false)
 const videoId = 'zEw7LA8e_eA'
 const videoEmbedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0`
 
 const playVideo = () => {
   showThumbnail.value = false
+  showModal.value = true
 }
 </script>
 
