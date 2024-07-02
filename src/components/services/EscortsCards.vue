@@ -15,6 +15,7 @@ import CardComponent from '@/components/services/Cards.vue'
           bgColor="bg-primary"
           cardUrl="/service/escorts-tracking"
           iconComponent="SvgTracking"
+          paragraph="Our secure escort and tracking services ensure the safe and efficient movement of your high-value assets, with complete transparency throughout the journey."
         />
         <CardComponent
           title="Monitoring"
@@ -22,6 +23,7 @@ import CardComponent from '@/components/services/Cards.vue'
           bgColor="bg-secondary"
           cardUrl="/service/monitoring"
           iconComponent="SvgMonitoring"
+          paragraph="Our advanced monitoring systems keep a watchful eye on your assets, providing real-time data and immediate alerts for any potential issues."
         />
         <CardComponent
           title="Escots Experts Managers"
@@ -29,6 +31,7 @@ import CardComponent from '@/components/services/Cards.vue'
           bgColor="bg-secondary"
           cardUrl="/service/escorts-experts"
           iconComponent="SvgEscort"
+          paragraph="Escorts Experts provides a team of highly-trained managers adept at handling complex logistics and high-end arrangements."
         />
       </div>
     </div>

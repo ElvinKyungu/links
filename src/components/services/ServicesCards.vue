@@ -16,6 +16,7 @@
         bgColor="bg-primary"
         cardUrl="/service/transport"
         iconComponent="SvgTransport"
+        paragraph="We  provide a comprehensive suite of services designed to optimize your logistics. We manage routes, schedules, and resources, ensuring on-time deliveries, minimized costs, and seamless communication."
       />
       <CardComponent
         title="Logistics Solution"
@@ -23,6 +24,7 @@
         bgColor="bg-secondary"
         cardUrl="/service/logistic"
         iconComponent="SvgLogistic"
+        paragraph="We are your one-stop shop for streamlined logistics solutions.  We'll take the wheel, ensuring your products get where they need to be, on time and hassle-free."
       />
       <CardComponent
         title="Supply Chain management"
@@ -30,6 +32,7 @@
         bgColor="bg-secondary"
         cardUrl="/service/supply"
         iconComponent="SvgSupply"
+        paragraph="We understand the importance of a robust and optimized supply chain. Our team of experienced professionals works closely with you to identify bottlenecks, streamline processes, and implement data-driven solutions."
       />
       <CardComponent
         title="Operations management"
@@ -37,6 +40,7 @@
         bgColor="bg-secondary"
         cardUrl="/service/operation"
         iconComponent="SvgTransport"
+        paragraph="We offer a team of seasoned operations management professionals dedicated to streamlining your processes and maximizing your efficiency."
       />
     </div>
   </section>

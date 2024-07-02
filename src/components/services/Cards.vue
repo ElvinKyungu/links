@@ -17,7 +17,8 @@ interface Props {
   titleColor: string;
   bgColor: string;
   cardUrl: string;
-  iconComponent: string; 
+  iconComponent: string;
+  paragraphe: String; 
 }
 
 defineProps<Props>()
@@ -42,7 +43,7 @@ const components: Record<string, any> = {
         <h1 class="text-xl transition font-bold group-hover:text-primary">{{ title }}</h1>
       </div>
       <p class="text-lg my-4 pb-5 border-b border-gray-300">
-        Sed gravida consequat orci in ullamcorper. Vivamus nec hendrerit quam. Nulla turpis risus, lobortis at dolor vitae, molestie congue enim. Proin gravida arcu sit amet auctor varius.
+        {{ paragraphe }}
       </p>
       <div class="flex items-center gap-4">
         <span :class="`block rounded-full p-2 ${bgColor}`">
