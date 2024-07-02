@@ -33,8 +33,8 @@
         </div>
       </div>
 
-        <!-- :src="videoEmbedUrl" -->
       <iframe
+        :src="videoEmbedUrl" 
         v-show="!showThumbnail"
         class="w-full h-full absolute top-0 left-0"
         frameborder="0"
