@@ -1,24 +1,22 @@
 <script setup lang="ts">
 import { useGsapAnimation } from '@/composables/useGsapAnimation'
-import about from '@/assets/pic01.jpg'
-const paragraphRef = useGsapAnimation(50, 1, 0.1)
-const titleRef = useGsapAnimation(-50, 1, 0.5)
-const subtitleRef = useGsapAnimation(70, 1, 0.5)
+import about from '@/assets/pic03.jpg'
+const firstParagraphRef = useGsapAnimation(-50, 1, 0)
+const seconParagraphRef = useGsapAnimation(150, 1, 0)
 </script>
+
 <template>
-  <div class="mx-10 md:mx-20 lg:mx-40 my-40">
-    <h1 class="capitalize text-4xl text-center font-semibold mb-5" ref="titleRef">About Us</h1>
-    <h3 class="uppercase  text-[#828282] text-center text-xl" ref="subtitleRef">Know more about our company</h3>
+  <div class="mx-10 md:mx-20 lg:mx-40 my-20">
     <div class="grid col-span-1 md:flex justify-between w-full gap-10 my-10">
-      <div class="w-full">
+      <div class="rounded-md w-full">
         <img :src="about" alt="" class="w-full h-64 md:h-96 object-cover rounded-xl">
       </div>
       <div class="w-full">
-        <p class="text-lg text-justify" ref="paragraphRef">
-          <span class="block mb-3">
+        <p class="text-lg text-justify">
+          <span class="block mb-3" ref="firstParagraphRef">
             Links escorts & Tracking is a specialist Escort and logistics service provider operating across Central, East and Southern Africa.
           </span>
-          <span class="block">
+          <span class="block" ref="seconParagraphRef">
             Founded by an experienced team of logistics, Haulier and Security professionals with touch pan-African secret service experience; the company caters for the increasing need in logistics, transport tracking & support services by haulage companies when carrying a variety of high value goods across the African continent.
           </span>
         </p>

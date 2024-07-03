@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { useGsapAnimation } from '@/composables/useGsapAnimation'
-
+import about from '@/assets/pic02.jpg'
 const firstParagraphRef = useGsapAnimation(-50, 1, 0)
 const seconParagraphRef = useGsapAnimation(150, 1, 0)
 </script>
 
 <template>
   <div class="mx-10 md:mx-20 lg:mx-40 my-20">
-    <div class="grid col-span-1 md:flex justify-between w-full gap-6 my-10">
-      <div class="w-full md:w-1/2">
+    <div class="grid col-span-1 md:flex justify-between w-full gap-10 my-10">
+      <div class="w-full">
         <p class="text-lg text-justify">
           <span class="block mb-3" ref="firstParagraphRef">
             Links escorts & Tracking is a specialist Escort and logistics service provider operating across Central, East and Southern Africa.
@@ -18,8 +18,8 @@ const seconParagraphRef = useGsapAnimation(150, 1, 0)
           </span>
         </p>
       </div>
-      <div class="bg-[#D9D9D9] rounded-md w-full md:w-1/2 h-64 md:h-96">
-
+      <div class="rounded-md w-full">
+        <img :src="about" alt="" class="w-full h-64 md:h-96 object-cover rounded-xl">
       </div>
     </div>
   </div>
