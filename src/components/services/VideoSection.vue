@@ -43,8 +43,7 @@ import VideoModal from '@/components/services/VideoModal.vue'
 
 const showThumbnail = ref(true)
 const showModal = ref(false)
-const videoId = 'zEw7LA8e_eA'
-const videoEmbedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0`
+const videoId = 'h4Fil8_7M9g'
 
 const playVideo = () => {
   showThumbnail.value = false
