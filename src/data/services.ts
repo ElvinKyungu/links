@@ -8,7 +8,7 @@ interface Service {
 export const services: Record<string, Service> = {
   transport: {
     title: 'Transport Services',
-    description: 'Sed gravida consequat orci in ullamcorper.',
+    description: 'We provide a comprehensive suite of services designed to optimize your logistics. We manage routes, schedules, and resources, ensuring on-time deliveries, minimized costs, and seamless communication..',
     list: [
       'Local & International multi-mode transportation',
       'Freight',
@@ -18,7 +18,7 @@ export const services: Record<string, Service> = {
   },
   logistic: {
     title: 'Logistics Solutions',
-    description: 'Your logistics solution details here...',
+    description: "We are your one-stop shop for streamlined logistics solutions. We'll take the wheel, ensuring your products get where they need to be, on time and hassle-free.",
     list: [
       'Local & International Logistics',
       'Warehousing And distribu9',
@@ -30,7 +30,7 @@ export const services: Record<string, Service> = {
   },
   supply: {
     title: 'Supply Chain management',
-    description: 'Your logistics solution details here...',
+    description: 'We understand the importance of a robust and optimized supply chain. Our team of experienced professionals works closely with you to identify bottlenecks, streamline processes, and implement data-driven solutions.',
     list: [
       'IT And industrial equipment supply',
       'Supply of construction materials and aggregates',
@@ -43,7 +43,7 @@ export const services: Record<string, Service> = {
   },
   operation: {
     title: 'Operations management',
-    description: 'Your logistics solution details here...',
+    description: 'We offer a team of seasoned operations management professionals dedicated to streamlining your processes and maximizing your efficiency.',
     list: [
       'Process planning and optimization',
       'Service design',
@@ -54,7 +54,7 @@ export const services: Record<string, Service> = {
   },
   monitoring: {
     title: 'Monitoring',
-    description: 'Your logistics solution details here...',
+    description: 'Our advanced monitoring systems keep a watchful eye on your assets, providing real-time data and immediate alerts for any potential issues.',
     list: [
       'We provide Uniformed escorts officers',
       'Witness loading and recording of commodities',
@@ -65,7 +65,7 @@ export const services: Record<string, Service> = {
   },
   'escorts-tracking': {
     title: 'Escorts & Tracking',
-    description: 'Your logistics solution details here...',
+    description: 'Our secure escort and tracking services ensure the safe and efficient movement of your high-value assets, with complete transparency throughout the journey.',
     list: [
       'Monitoring of clients’ goods during uploading, transportation, and offloading stage',
       'Monitoring of the service delivery by the transportation companies that have been appointed by the clients',
@@ -79,7 +79,7 @@ export const services: Record<string, Service> = {
   ,
   'escorts-experts': {
     title: 'Escots Experts Managers',
-    description: 'Your logistics solution details here...',
+    description: 'Escorts Experts provides a team of highly-trained managers adept at handling complex logistics and high-end arrangements.',
     list: [
       'Supervise and control the specific teams',
       'Report to the client on a daily base about current operations', 
