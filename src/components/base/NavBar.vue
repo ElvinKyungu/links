@@ -25,7 +25,7 @@ const toggleMenu = () => {
         <router-link to="/" active-class="text-primary border-b border-primary transition">Home</router-link>
       </li>
       <li class="hover:text-primary">
-        <router-link to="/services" active-class="text-primary border-b border-primary transition">Logistics Solution</router-link>
+        <router-link to="/services" active-class="text-primary border-b border-primary transition">Logistics Solutions</router-link>
       </li>
       <li class="hover:text-primary">
         <router-link to="/escorts" active-class="text-primary border-b border-primary transition">Escort & Tracking</router-link>
