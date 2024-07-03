@@ -42,7 +42,7 @@ const components: Record<string, any> = {
         <component :is="components[iconComponent]" class="svg-services w-40 h-20 fill-secondary group-hover:fill-primary transition"/>
         <h1 class="text-xl transition font-bold group-hover:text-primary">{{ title }}</h1>
       </div>
-      <p class="text-lg my-4 pb-5 border-b border-gray-300 h-[14rem]">
+      <p class="text-lg my-4 pb-5 border-b border-gray-300">
         {{ paragraph }}
       </p>
       <div class="flex items-center gap-4">

@@ -35,7 +35,9 @@
           We handle everything from single packages to complex multi-modal
           shipments, ensuring your cargo arrives on time and within budget.
         </p>
-        <BtnPrimary text="Discover More" />
+        <router-link to="/services">
+          <BtnPrimary text="Discover More" />
+        </router-link>
       </div>
     </div>
     <div 
@@ -70,7 +72,9 @@
           sensitive goods. Our escort services offer real-time monitoring 
           and intervention capabilities, giving you complete peace of mind.
         </p>
-        <BtnPrimary text="Discover More" />
+        <router-link to="/escorts">
+          <BtnPrimary text="Discover More" />
+        </router-link>
       </div>
     </div>
   </div>

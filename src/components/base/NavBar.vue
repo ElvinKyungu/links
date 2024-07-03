@@ -25,7 +25,7 @@ const toggleMenu = () => {
         <router-link to="/" active-class="text-primary border-b border-primary transition">Home</router-link>
       </li>
       <li class="hover:text-primary">
-        <router-link to="/services" active-class="text-primary border-b border-primary transition">Logistics & Solution</router-link>
+        <router-link to="/services" active-class="text-primary border-b border-primary transition">Logistics Solution</router-link>
       </li>
       <li class="hover:text-primary">
         <router-link to="/escorts" active-class="text-primary border-b border-primary transition">Escort & Tracking</router-link>
@@ -56,7 +56,7 @@ const toggleMenu = () => {
             <router-link to="/" active-class="text-primary font-bold">Home</router-link>
           </li>
           <li @click="toggleMenu">
-            <router-link to="/services" active-class="text-primary font-bold">Logistics & Solution</router-link>
+            <router-link to="/services" active-class="text-primary font-bold">Logistics Solution</router-link>
           </li>
           <li @click="toggleMenu">
             <router-link to="/escorts" active-class="text-primary font-bold">Escort & Tracking</router-link>
