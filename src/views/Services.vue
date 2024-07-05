@@ -8,7 +8,7 @@
 </script>
 
 <template>
-  <HeaderService />
+  <HeaderService service-name=""/>
   <ServicesAbout />
   <ServicesCards />
   <DownloadCards />

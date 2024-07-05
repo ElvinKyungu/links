@@ -28,7 +28,7 @@ const displayName = computed(() => {
       <h1 ref="headerSubTitleRef" class="text-gray-500 uppercase text-center text-2xl md:3xl lg:text-4xl">
         Discover our
       </h1>
-      <h1 ref="headerTitleRef"class="text-white text-center text-4xl md:5xl lg:text-7xl font-bold">
+      <h1 ref="headerTitleRef" class="text-white text-center text-4xl md:5xl lg:text-7xl font-bold">
         {{ displayName }}
       </h1>
     </div>

@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <HeaderService />
+  <HeaderService service-name=""/>
   <EscortAbout />
   <EscortsCards />
   <VideoSection />
